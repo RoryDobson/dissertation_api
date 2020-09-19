@@ -1,0 +1,20 @@
+Return all users
+    {{API_URL}}/users?key={{API_KEY}}
+
+Insert a user into the user table
+    {{API_URL}}/insert_into_users?key={{API_KEY}}&first_name={{FIRST_NAME}}&last_name={{LAST_NAME}}&email={{EMAIL}}&password={{PASSWORD}}
+
+Drop user from table
+    {{API_URL}}/drop_from_users?key={{API_KEY}}&email={{EMAIL}}&password={{PASSWORD}}
+
+User login
+    {{API_URL}}/user_login?key={{API_KEY}}&email={{EMAIL}}&password={{PASSWORD}}
+
+Return single user
+    {{API_URL}}/return_user?key={{API_KEY}}&email={{EMAIL}}&password={{PASSWORD}}
+
+Create token
+    {{API_URL}}/create_token?key={{API_KEY}}&id={{USER_ID}}
+
+Authenticate token
+    {{API_URL}}/authenticate_token?key={{API_KEY}}&token={{TOKEN}}
