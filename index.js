@@ -1,4 +1,1 @@
-// Test
-
-// require("./router");
-console.log("Hello");
+require("./router");
