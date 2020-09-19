@@ -108,7 +108,9 @@ app.post('/admin', jsonParser, function (req, res) {
     get.admin(req, res);
 });
 
+const port = process.env.PORT || 3001;
+
 // Host on port 3001
-app.listen(3001, () => {
+app.listen(port, () => {
     console.log('Go to http://localhost:3001 so you can see the data.');
 });
