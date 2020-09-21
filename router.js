@@ -93,16 +93,19 @@ app.post('/send_email', jsonParser, function (req, res) {
     get.send_email(req, res);
 });
 
+// Return all blog entries
 app.post('/blog/all', jsonParser, function (req, res) {
     var get = require("./routes/blog/return_all");
     get.return_all(req, res);
 });
 
+// Add a blog entry
 app.post('/blog/add', jsonParser, function (req, res) {
     var get = require("./routes/blog/upload");
     get.upload(req, res);
 });
 
+// Verify user as an admin
 app.post('/admin', jsonParser, function (req, res) {
     var get = require("./routes/admin");
     get.admin(req, res);
