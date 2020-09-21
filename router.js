@@ -88,7 +88,7 @@ app.post('/update_user', jsonParser, function (req, res) {
     get.update_account(req, res);
 });
 
-app.post('/send_email', jsonParser, function (req, res) {
+app.post('/contact', jsonParser, function (req, res) {
     var get = require("./email/email");
     get.send_email(req, res);
 });
